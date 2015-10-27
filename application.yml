@@ -17,5 +17,5 @@ spring:
   profiles: cloud
 eureka:
   instance:
-    hostname: ${vcap.application.uris[0]}
+    hostname: ${vcap.application.uris[1]}
     nonSecurePort: 80
