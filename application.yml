@@ -6,9 +6,7 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
     metadataMap:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${server.port:8080}}
-
-
-client:
+  client:
     serviceUrl:
       defaultZone: ${vcap.services.springbox-service-registry.credentials.uri:http://127.0.0.1:8761}/eureka/
 
